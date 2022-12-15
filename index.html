@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" >
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <title>Profile Page</title>
+    </head>
+    <body>
+       
+            <header class="navigationBarContainer">
+                <nav class="navbar body-grid">
+                    <div>
+                        <a href="#" class="header_name">PREY - P R E Y</a>
+                    </div>
+                    <div class="navigation_menu" id="navigation_menu">
+                        <ul class="nav_menu_list" id="nav_menu_list">
+                        </ul>
+                    </div>
+                    <div class="nav_toggle" id="nav_toggle">
+                        <i class="fa fa-navicon"></i>
+                    </div>
+                </nav>
+            </header>
+            <main class="mainContainer">
+                
+                <section class="home body-grid" id="home">
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, <br>I'am <span class="home_title_colored">PREY PATEL</span><br>to be Software Engineer,<br>current DATA ANALYST</h1>
+                        
+                    </div>
+                    <div class=>
+                        <svg  viewBox="0 0 479 467" >
+                               <image href="profile.jpeg" class="home_blob_img" style="align-items: center; " height="500px" width="300px">
+                        </svg>
+                    </div>
+
+                    <div class="home_data">
+                       
+                        <a  href="Resume.pdf" download="Resume" class="button"><i class="fa fa-download"></i> Resume</a>
+                        <a href="#contact" class="button">Contact me</a>
+                    </div>
+                     
+                </section>
+                
+                <section class="about  section" id="about">
+                    <div class="about_container body-grid">
+                        <div class="about_subcontainer1">
+                            <h2 class="section-title">  About me and Academic Statement:</h2>
+                            <p class="about_text"> Hii i am Prey patel and this is my own portfolio made by me. I am an international student in seneca collge stuyding Computer Programming.</p>
+                            
+                            <div class="date"><strong>Date:</strong>
+                            <input type="text" id="currentDate">
+                            <br><br>
+                            <script>
+                            var today = new Date();
+                            var date = (today.getMonth()+1)+'-'+ today.getDate() + '-' + today.getFullYear();
+                            document.getElementById("currentDate").value = date;
+                            </script></div>
+                        </div>
+                        <div class="about_subcontainer2">
+                            <h2 class="section-title">Personal Information</h2>
+                            <ul class="about_text">
+                                <li><strong>AGE:</strong>19</li>
+                                 
+                                <li><strong>E-MAIL:</strong> ppatel446@myseneca.ca</li>
+                                
+                                <li><strong>LANGUAGE:</strong> English, Gujarati, Hindi</li>
+                               
+                                <li><strong>CLASS SECTION:</strong> NII</li>
+                    
+                                <li><strong>STUDENT ID: </strong>168954212</li>
+                                
+                                <li><strong>PROFESSOR: </strong> Robin Li</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="education section" id="education">
+                    <div class="body-grid">
+                        <h2 class="section-title">Education</h2>
+                        <div class="education_container">
+                            <div class="education_subcontainer1">
+                                <p class="education_subcontainer1_text1">2019-2021(Completed)</p>
+                                <p class="education_subcontainer1_text2">Science and technology</p>
+                            </div>
+                            
+                            <div class="education_subcontainer2">
+                                <div class="education_subcontainer21">
+                                    <p class="education_subcontainer21_text1">Higher Secondary School</p>
+                                    <p class="education_subcontainer21_text2">DIVINE CHILD SCHOOL</p>
+                                </div>
+                                <div class="education_subcontainer22">
+                                    <p>Studied Mathemathics as main subject</p>
+                                    <p>in highder secondary School</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div>
+                            <pre>
+                            </pre>
+                    </div>
+                        <div class="education_container">
+                            <div class="education_subcontainer1">
+                                <p class="education_subcontainer1_text1">2022-2023(Expected)</p>
+                                <p class="education_subcontainer1_text2"> Computer programming</p>
+                            </div>
+                            <div class="education_subcontainer2">
+                                <div class="education_subcontainer21">
+                                    <p class="education_subcontainer21_text1">Diploma</p>
+                                    <p class="education_subcontainer21_text2">Seneca College</p>
+                                </div>
+                                <div class="education_subcontainer22">
+                                    <p>Currently Active in this program </p>
+                                    <p>Under the supervision of seneca college faculty</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div>
+                        
+                            <pre>
+                            </pre>
+                        
+                    </div>
+                </section>
+                
+                <section class="contact section" id="contact">
+                    <div class="contact_container body-grid">
+                        <h2 class="section-title">Contact form</Form></h2>
+                        <div>
+                            <form class="contact_form" method="post" action="https://httpbin.org/post" name="contact_form" id="contact_form">
+                                <input type="text" id="name" placeholder="Name" name="name" class="contact_input" required>
+                                <input type="email" id="email" placeholder="Email" name="email" class="contact_input" required>
+                                <input type="text" id="address" placeholder="address" name="address" class="contact_input" required>
+                                <input list="city-list" id="city" name="city" class="contact_input" placeholder="city" required>
+                                
+                                <datalist id="city-list">
+                                    <option value="Vancouver">Vancouver</option>
+                                    <option value="Windsor">Windsor</option>
+                                    <option value="Montreal">Montreal</option>
+                                    <option value="Toronto">Toronto</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option Value="Winnipeg">Winnipeg</option>
+                                    <option Value="Ottawa">Ottawa</option>
+                                    <option Value="Calgary">Calgary</option>
+                                    <option Value="Winnipeg">Prince Edward Island</option>
+                                    <option Value="Manitoba">Manitoba</option>
+                                    <option Value="Halifax">Halifax</option>
+                                    <option Value="Alberta">Alberta</option>
+
+                                </datalist>
+                                <input type="text" placeholder="postal_code" name="Postal Code" id="postal_code" class="contact_input" required >
+                                <div class="radioButtonContainer">
+                                    <label>Message:</label>
+                                    <input type="radio" value="Hiring" id="topic" name="topic">
+                                    <label for="topic">Hiring</label>
+                                    <input type="radio" value="Comment" id="topic" name="topic">
+                                    <label for="topic">Comment</label>
+                                </div>
+                                <textarea name="comments" id="comments" placeholder="comments" cols="0" rows="10" class="contact_input" required></textarea>
+                                <input type="submit" id="contact_button" value=" submit " class="contact_button button">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        <script src="index.js"></script>
+    </body>
+</html>
